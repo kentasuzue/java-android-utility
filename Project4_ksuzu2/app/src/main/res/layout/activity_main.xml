@@ -1,0 +1,1722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabRoster"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    >
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:id="@+id/rosterRow1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="10dip" />
+
+                            <TextView
+                                android:id="@+id/rosterRow1begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Player #" />
+
+                            <Space android:layout_width="10dip" />
+
+                            <EditText
+                                android:id="@+id/rosterRow1EditNum"
+                                android:layout_width="50dip"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:hint="##"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/rosterRow1EditName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:inputType="textPersonName"
+                                android:hint="Name" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Space android:layout_width="10dip" />
+
+                            <TextView
+                                android:id="@+id/rosterRow2begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Player #" />
+
+                            <Space android:layout_width="10dip" />
+
+                            <EditText
+                                android:id="@+id/rosterRow2EditNum"
+                                android:layout_width="50dip"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:hint="##"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/rosterRow2EditName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:inputType="textPersonName"
+                                android:hint="Name" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Space android:layout_width="10dip" />
+
+                            <TextView
+                                android:id="@+id/rosterRow3begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Player #" />
+
+                            <Space android:layout_width="10dip" />
+
+                            <EditText
+                                android:id="@+id/rosterRow3EditNum"
+                                android:layout_width="50dip"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:hint="##"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/rosterRow3EditName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:inputType="textPersonName"
+                                android:hint="Name" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="10dip" />
+
+                            <TextView
+                                android:id="@+id/rosterRow4begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Player #" />
+
+                            <Space android:layout_width="10dip" />
+
+                            <EditText
+                                android:id="@+id/rosterRow4EditNum"
+                                android:layout_width="50dip"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:hint="##"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/rosterRow4EditName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:inputType="textPersonName"
+                                android:hint="Name" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="10dip" />
+
+                            <TextView
+                                android:id="@+id/rosterRow5begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Player #" />
+
+                            <Space android:layout_width="10dip" />
+
+                            <EditText
+                                android:id="@+id/rosterRow5EditNum"
+                                android:layout_width="50dip"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:hint="##"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/rosterRow5EditName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:inputType="textPersonName"
+                                android:hint="Name" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="10dip" />
+
+                            <TextView
+                                android:id="@+id/rosterRow6begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Player #" />
+
+                            <Space android:layout_width="10dip" />
+
+                            <EditText
+                                android:id="@+id/rosterRow6EditNum"
+                                android:layout_width="50dip"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:hint="##"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/rosterRow6EditName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:inputType="textPersonName"
+                                android:hint="Name" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="10dip" />
+
+                            <TextView
+                                android:id="@+id/rosterRow7begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Player #" />
+
+                            <Space android:layout_width="10dip" />
+
+                            <EditText
+                                android:id="@+id/rosterRow7EditNum"
+                                android:layout_width="50dip"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:hint="##"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/rosterRow7EditName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:inputType="textPersonName"
+                                android:hint="Name" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="10dip" />
+
+                            <TextView
+                                android:id="@+id/rosterRow8begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Player #" />
+
+                            <Space android:layout_width="10dip" />
+
+                            <EditText
+                                android:id="@+id/rosterRow8EditNum"
+                                android:layout_width="50dip"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:hint="##"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/rosterRow8EditName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:inputType="textPersonName"
+                                android:hint="Name" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="10dip" />
+
+                            <TextView
+                                android:id="@+id/rosterRow9begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Player #" />
+
+                            <Space android:layout_width="10dip" />
+
+                            <EditText
+                                android:id="@+id/rosterRow9EditNum"
+                                android:layout_width="50dip"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:hint="##"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/rosterRow9EditName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:inputType="textPersonName"
+                                android:hint="Name" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="10dip" />
+
+                            <TextView
+                                android:id="@+id/rosterRow10begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Player #" />
+
+                            <Space android:layout_width="10dip" />
+
+                            <EditText
+                                android:id="@+id/rosterRow10EditNum"
+                                android:layout_width="50dip"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:hint="##"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/rosterRow10EditName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:inputType="textPersonName"
+                                android:hint="Name" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="10dip" />
+
+                            <TextView
+                                android:id="@+id/rosterRow11begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Player #" />
+
+                            <Space android:layout_width="10dip" />
+
+                            <EditText
+                                android:id="@+id/rosterRow11EditNum"
+                                android:layout_width="50dip"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:hint="##"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/rosterRow11EditName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:inputType="textPersonName"
+                                android:hint="Name" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="10dip" />
+
+                            <TextView
+                                android:id="@+id/rosterRow12begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Player #" />
+
+                            <Space android:layout_width="10dip" />
+
+                            <EditText
+                                android:id="@+id/rosterRow12EditNum"
+                                android:layout_width="50dip"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:hint="##"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/rosterRow12EditName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:inputType="textPersonName"
+                                android:hint="Name" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="10dip" />
+
+                            <TextView
+                                android:id="@+id/rosterRow13begin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Player #" />
+
+                            <Space android:layout_width="10dip" />
+
+                            <EditText
+                                android:id="@+id/rosterRow13EditNum"
+                                android:layout_width="50dip"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:hint="##"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/rosterRow13EditName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:ems="9"
+                                android:inputType="textPersonName"
+                                android:hint="Name" />
+
+                        </TableRow>
+
+
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabShots"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow1Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLength="13"
+                                android:scrollHorizontally="true"
+                                android:maxLines="1"
+                                android:minLines="1"
+                                android:ellipsize="end"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow1MadeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Made:" />
+
+                            <Button
+                                android:id="@+id/shotsRow1UpMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow1Made"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow1DownMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/shotsRow1MissedLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Missed:" />
+
+                            <Button
+                                android:id="@+id/shotsRow1UpMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow1Missed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow1DownMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow2Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow2MadeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Made:" />
+
+                            <Button
+                                android:id="@+id/shotsRow2UpMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow2Made"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+
+                            <Button
+                                android:id="@+id/shotsRow2DownMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/shotsRow2MissedLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Missed:" />
+
+                            <Button
+                                android:id="@+id/shotsRow2UpMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow2Missed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow2DownMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow3Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow3MadeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Made:" />
+
+                            <Button
+                                android:id="@+id/shotsRow3UpMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow3Made"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+
+                            <Button
+                                android:id="@+id/shotsRow3DownMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/shotsRow3MissedLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Missed:" />
+
+                            <Button
+                                android:id="@+id/shotsRow3UpMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow3Missed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow3DownMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow4Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow4MadeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Made:" />
+
+                            <Button
+                                android:id="@+id/shotsRow4UpMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow4Made"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+
+                            <Button
+                                android:id="@+id/shotsRow4DownMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/shotsRow4MissedLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Missed:" />
+
+                            <Button
+                                android:id="@+id/shotsRow4UpMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow4Missed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow4DownMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow5Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow5MadeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Made:" />
+
+                            <Button
+                                android:id="@+id/shotsRow5UpMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow5Made"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+
+                            <Button
+                                android:id="@+id/shotsRow5DownMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/shotsRow5MissedLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Missed:" />
+
+                            <Button
+                                android:id="@+id/shotsRow5UpMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow5Missed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow5DownMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow6Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow6MadeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Made:" />
+
+                            <Button
+                                android:id="@+id/shotsRow6UpMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow6Made"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+
+                            <Button
+                                android:id="@+id/shotsRow6DownMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/shotsRow6MissedLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Missed:" />
+
+                            <Button
+                                android:id="@+id/shotsRow6UpMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow6Missed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow6DownMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow7Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow7MadeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Made:" />
+
+                            <Button
+                                android:id="@+id/shotsRow7UpMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow7Made"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+
+                            <Button
+                                android:id="@+id/shotsRow7DownMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/shotsRow7MissedLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Missed:" />
+
+                            <Button
+                                android:id="@+id/shotsRow7UpMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow7Missed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow7DownMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow8Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow8MadeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Made:" />
+
+                            <Button
+                                android:id="@+id/shotsRow8UpMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow8Made"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+
+                            <Button
+                                android:id="@+id/shotsRow8DownMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/shotsRow8MissedLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Missed:" />
+
+                            <Button
+                                android:id="@+id/shotsRow8UpMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow8Missed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow8DownMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow9Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow9MadeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Made:" />
+
+                            <Button
+                                android:id="@+id/shotsRow9UpMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow9Made"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+
+                            <Button
+                                android:id="@+id/shotsRow9DownMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/shotsRow9MissedLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Missed:" />
+
+                            <Button
+                                android:id="@+id/shotsRow9UpMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow9Missed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow9DownMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow10Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow10MadeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Made:" />
+
+                            <Button
+                                android:id="@+id/shotsRow10UpMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow10Made"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+
+                            <Button
+                                android:id="@+id/shotsRow10DownMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/shotsRow10MissedLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Missed:" />
+
+                            <Button
+                                android:id="@+id/shotsRow10UpMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow10Missed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow10DownMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow11Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow11MadeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Made:" />
+
+                            <Button
+                                android:id="@+id/shotsRow11UpMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow11Made"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+
+                            <Button
+                                android:id="@+id/shotsRow11DownMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/shotsRow11MissedLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Missed:" />
+
+                            <Button
+                                android:id="@+id/shotsRow11UpMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow11Missed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow11DownMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="3dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow12Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="5dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow12MadeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Made:" />
+
+                            <Button
+                                android:id="@+id/shotsRow12UpMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow12Made"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+
+                            <Button
+                                android:id="@+id/shotsRow12DownMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/shotsRow12MissedLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Missed:" />
+
+                            <Button
+                                android:id="@+id/shotsRow12UpMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow12Missed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow12DownMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <Space android:layout_width="5dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow13Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="5dip" />
+
+                            <TextView
+                                android:id="@+id/shotsRow13MadeLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Made:" />
+
+                            <Button
+                                android:id="@+id/shotsRow13UpMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow13Made"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+
+                            <Button
+                                android:id="@+id/shotsRow13DownMade"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/shotsRow13MissedLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Shots Missed:" />
+
+                            <Button
+                                android:id="@+id/shotsRow13UpMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/shotsRow13Missed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/shotsRow13DownMissed"
+                                android:layout_width="30dip"
+                                android:layout_height="40dip"
+                                android:text="-" />
+
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabStats"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow1Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow1Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Field Goal %:" />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow1Stat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="NA (0 attempts)"  />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow2Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow2Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Field Goal %:" />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow2Stat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="NA (0 attempts)"  />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow3Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow3Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Field Goal %:" />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow3Stat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="NA (0 attempts)"  />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow4Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow4Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Field Goal %:" />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow4Stat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="NA (0 attempts)"  />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow5Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow5Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Field Goal %:" />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow5Stat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="NA (0 attempts)"  />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow6Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow6Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Field Goal %:" />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow6Stat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="NA (0 attempts)"  />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow7Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow7Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Field Goal %:" />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow7Stat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="NA (0 attempts)"  />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow8Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow8Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Field Goal %:" />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow8Stat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="NA (0 attempts)"  />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow9Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow9Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Field Goal %:" />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow9Stat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="NA (0 attempts)"  />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow10Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow10Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Field Goal %:" />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow10Stat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="NA (0 attempts)"  />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow11Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow11Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Field Goal %:" />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow11Stat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="NA (0 attempts)"  />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow12Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow12Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Field Goal %:" />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow12Stat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="NA (0 attempts)"  />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow13Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:hint="ADD ROSTER"  />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow13Label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Field Goal %:" />
+
+                            <Space android:layout_width="10dp" />
+
+                            <TextView
+                                android:id="@+id/statsRow13Stat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="NA (0 attempts)"  />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+</android.support.constraint.ConstraintLayout>
+
