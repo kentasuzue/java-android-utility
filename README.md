@@ -5,7 +5,5 @@ The 3 tabs are "ADD ROSTER," "ADD SHOTS," and "VIEW STATS." When a player's # an
 
 The project zip file is Project4_ksuzu2.zip
 
-A video demo of the utility is Kenta_Suzue_Project4.mp4
-
 A link to the same video:
 https://cdnapisec.kaltura.com/index.php/extwidget/preview/partner_id/1371761/uiconf_id/13362791/entry_id/0_iinzxu8w/embed/dynamic
